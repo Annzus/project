@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+.wrapperBox{
+    width: 100%;
+
+}
+.navBox{
+    width: 100%;
+    height: 40px;
+    background: #ffb638;
+}
+.navBar{
+    width: 1400px;
+    min-width: 1400px;
+    margin: 0 auto;
+}
+.navBar .logo{
+    width:90px;
+    height:31px;
+    float: left;
+}
+.logo img{
+    margin-top: 5px;
+}
+.navBar nav{
+    float: right;
+}
+.navBar nav ul li{
+    float: left;
+    position: relative;
+}
+.navBar nav li a{
+    display: inline-block;
+    height:40px;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #fff;
+}
+.navBar nav li:hover a{
+    color: #ffb638;
+    z-index: 2;
+    position: relative;
+}
+.navBar nav ul li .btnbg-x{
+    position: absolute;
+    left: -1px;
+    width: 0;
+    top: -1px;
+    bottom: -1px;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.navBar nav ul li:hover .btnbg-x{
+    width: calc(100% + 2px);
+    background:#fff;
+    color: #ffb638;
+}
+/* banner */
+.bannerBox{
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+    position: relative;
+}
+.bannerBox li .img{
+    display: none;
+    width: 100%;
+    height:640px;
+}
+.bannerBox li .current{
+    display: block;
+}
+.bannerBox .dots{
+    position: absolute;
+    width: 100px;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -50px;
+}
+.bannerBox .dots>span{
+    display: inline-block;
+    width:11px;
+    height:11px;
+    background: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.bannerBox .dots>span:not(:last-child){
+    margin-right: 5px;
+}
+.bannerBox .dots>span.square{
+    background: #ffb638;
+}
+/* search */
+.searchBox {
+    width: 975px;
+    height:68px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    margin-top:-30px;
+    border-radius:5px;
+    box-shadow: 0 0 2px 0 #ccc;
+}
+.searchBox form input{
+    width: 907px;
+    height:68px;
+    float: left;
+    text-indent: 20px;
+    border-radius: 5px;
+}
+.searchBox form input[type="submit"]{
+    display: inline-block;
+    width: 30px;
+    background: url(../img/_i_icon_13915_icon_139150.svg) no-repeat center;
+    animation: bounce .75s ease-in infinite alternate;
+}
+/* bounce */
+@keyframes bounce{
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    100% {
+        transform:translate3d(0,-8px,0);
+    }
+}
+/* キャンペン */
+.oddsBox{
+    width: 1400px;
+    margin: 30px auto 130px auto;
+}
+/* title */
+.oddsBox .title p, .wantgoBox .title p, .ensureBox .title p{
+    width: 200px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    background:#ffb638;
+    color: #fff;
+    font-size: 22px;
+    float: left;
+    border-radius: 5px;
+}
+.title{
+    height: 40px;
+}
+.oddsBox .title span, .wantgoBox .title span, .ensureBox .title span{
+    font-size: 22px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #ffb638;
+}
+.oddsBox .title span i{
+    font-style: normal;
+    padding: 0 5px;
+    display: inline-block;
+    animation: bounce .55s ease-in infinite alternate;
+}
+.content{
+    clear: left;
+    height: 760px;
+    padding-top: 40px;
+}
+.content .list .list_nav{
+    display: inline-block;
+    height: 46px;
+    padding: 0 33px;
+    line-height: 46px;
+    text-align: center;
+    background: #fff;
+    border-radius:5px;
+    box-shadow: 0 0 4px 0 #ccc;
+    box-sizing: border-box;
+    margin-right: 80px;
+    cursor: pointer;
+}
+.content .list .list_nav:last-child{
+    margin-right: 0;
+}
+.content .list .current_option{
+    background: #ffb638;
+    color: #fff;
+}
+/* 物件 */
+.productBox{
+    width: 100%;
+    margin: 20px 0;
+    clear: both;
+    display: none;
+}
+.on{
+    display: block;
+}
+.infoBox p>img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform .75s;
+}
+.infoBox p>img:hover{
+    transform: scale(1.2);
+}
+.infoBox{
+    width: 340px;
+    float: left;
+    margin: 20px 13px 0 0;
+}
+.infoBox:nth-child(4){
+    margin-right: 0;
+}
+.infoBox p:first-child{
+    width: 334px;
+    height: 222px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.title{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.infoBox span{
+    font-size: 12px;
+}
+.infoBox p s{
+    margin: 0 5px;
+}
+.infoBox ul{
+    margin: 10px 0;
+}
+.infoBox ul li{
+    float: left;
+    font-size: 12px;
+}
+.infoBox ul li img{
+    margin-right: 15px;
+    width: 100px;
+}
+/* more */
+.wantgoBox {
+    width: 1400px;
+    height: 303px;
+    margin: 0 auto;
+    clear: both;
+}
+.wantgoBox ul{
+    clear: both;
+    margin-top: 45px;
+}
+.wantgoBox ul li img{
+    width: 193px;
+    height:241px;
+    border-radius: 5px;
+}
+.wantgoBox ul li{
+    width: 193px;
+    height:241px;
+    float: left;
+    margin-right: 48px;
+    position: relative;
+}
+.wantgoBox ul li:last-child{
+    margin-right: 0;
+}
+.wantgoBox ul li p{
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    margin-left: -40px;
+    z-index: 2;
+}
+.wantgoBox ul li span{
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+/* mask */
+.wantgoBox ul li .mark{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.wantgoBox ul li:hover .mark{
+    opacity:1;
+}
+/* ensure */
+.ensureBox{
+    clear: both;
+    width: 1400px;
+    height: 200px;
+    margin: 70px auto;
+}
+.ensureBox .ensureList{
+    clear: both;
+}
+.ensureList dl{
+    float: left;
+    width: 433px;
+    margin: 20px 50px 0 0;
+}
+.ensureList dl:last-child{
+    margin-right: 0;
+}
+.ensureList dl dt, .ensureList dl dd{
+    float: left;
+}
+.ensureList dl dt{
+    margin-right: 15px;
+    animation: bounce .75s ease-in infinite alternate;
+}
+.ensureList dl dd{
+    font-size: 18px;
+    line-height: 1.8;
+    width: 300px;
+}
+/* link */
+.listlinkBox {
+    width: 1400px;
+    height: 280px;
+    margin: 30px auto 50px auto;
+}
+.listlinkBox dl{
+    float: left;
+    width: 350px;
+    line-height: 1.6;
+}
+.listlinkBox dl dt{
+    margin: 0 0 20px 0;
+    color: #ffb638;
+}
+.copyBox {
+    clear: both;
+    text-align: center;
+}
