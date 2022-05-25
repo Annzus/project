@@ -167,11 +167,24 @@
         </div>
     </header>
     <!-- banner -->
-    <section class="banner">
-        <img src="./images/banner.jpeg" alt="">
+    <section class="banner" id="banner">
+        <ul id="carousel_list" class="carousel_list">
+            <li><img src="./images/banner.jpeg" alt=""></li>
+            <li><img src="./images/banner2.jpeg" alt=""></li>
+            <li><img src="./images/banner.jpeg" alt=""></li>
+            <li><img src="./images/banner2.jpeg" alt=""></li>
+            <li><img src="./images/banner.jpeg" alt=""></li>
+        </ul>
+        <ol id="circle_ol" class="circles">
+            <li data-n="0" class="current"></li>
+            <li data-n="1"></li>
+            <li data-n="2"></li>
+            <li data-n="3"></li>
+            <li data-n="4"></li>
+        </ol>
         <div class="center-wrap">
-            <a href="" class="leftBtn"></a>
-            <a href="" class="rightBtn"></a>
+            <a href="javascript:;" id="left_btn" class="leftBtn"></a>
+            <a href="javascript:;" id="right_btn" class="rightBtn"></a>
             <nav class="banner-nav">
                 <ul>
                     <li class="hot">
@@ -332,6 +345,7 @@
             </nav>
         </div>
     </section>
+    <script src="./js/carousel.js"></script>
     <!-- ad -->
     <section class="hot-ads clearfix">
         <div class="center-wrap">
@@ -642,6 +656,11 @@
             </div>
         </div>
     </footer>
+    <!-- totop -->
+    <a href="javascript:;" class="backtotop" id="backtotop">
+        TOP
+    </a>
+    <script src="./js/backtotop.js"></script>
 </body>
 
 </html>
